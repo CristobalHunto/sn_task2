@@ -16,9 +16,10 @@ public:
 
 class CLast: CBase
 {
+private:
+    int get() {return -1;}
 public:
     CLast(int j) {this->add(j);};
-    int get() {return -1;}
     void print(){std::cout << "i = " << this->get() << std::endl;};
     void printB(){std::cout << "i = " << CBase::get() << std::endl;};
 };
